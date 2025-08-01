@@ -8,6 +8,7 @@ public class CartItem {
     private final Product product;
     private int quantity;
 
+    // ------------------------------------
     // Rep Invariant (RI):
     // - product is not null.
     // - quantity > 0.
@@ -15,6 +16,7 @@ public class CartItem {
     // Abstraction Function (AF):
     // - AF(product, quantity) = An item in a shopping cart 
     // for the given "product" with the specifield "quantity"
+    // ------------------------------------
 
     /**
      * ตรวจสอบ Rep Invariant เป็นจริงหรือไม่
