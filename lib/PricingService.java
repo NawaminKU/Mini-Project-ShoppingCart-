@@ -1,7 +1,6 @@
 package lib;
 
 import java.util.ArrayList;
-
 import lib.Discount.*;
 
 public class PricingService {
@@ -22,11 +21,11 @@ public class PricingService {
                 ruleToRemove = rule;
                 break;
             }
-            if (ruleToRemove != null) {
-                strategies.remove(ruleToRemove);
-            }
-            strategies.add(new StrategyRule(sku, strategy));
         }
+        if (ruleToRemove != null) {
+            strategies.remove(ruleToRemove);
+        }
+        strategies.add(new StrategyRule(sku, strategy));
     }
 
     /**

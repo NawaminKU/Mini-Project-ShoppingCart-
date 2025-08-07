@@ -60,6 +60,6 @@ public final class Product {
         if (this == obj) {return true;}
         if (obj == null || getClass() != obj.getClass()) {return false;}
         Product product = (Product) obj;
-        return productId.equals(product.productName);
+        return productId.equals(product.productId);
     }
 }

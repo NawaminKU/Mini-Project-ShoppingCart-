@@ -13,18 +13,17 @@ public class ProductCatalog {
     // AF: AF(products) = A catalog of all avilable products.
 
     private void checkRep() {
-        if (products == null) {
-            throw new RuntimeException("RI violated: products is null.");
-        }
-        // Check for duplicate products
-        for (int i = 0; i < products.size(); i++) {
-            for (int j = i + 1; j < products.size(); i++) {
-                if (products.get(i).equals(products.get(j))) {
-                    throw new RuntimeException("Ri violated: ");
-                }
+    if (products == null) {
+        throw new RuntimeException("RI violated: products is null.");
+    }
+    for (int i = 0; i < products.size(); i++) {
+        for (int j = i + 1; j < products.size(); j++) {
+            if (products.get(i).equals(products.get(j))) {
+                throw new RuntimeException("RI violated: duplicated.");
             }
         }
     }
+}
 
     public ProductCatalog() {
         checkRep();
